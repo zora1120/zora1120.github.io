@@ -1,0 +1,48 @@
+body {
+  background: url("images/微信图片_20250929131120_8_240.jpg") repeat; /* 闪烁星空背景 */
+  color: white;
+  text-align: center;
+  font-family: "Arial Black", sans-serif;
+}
+
+/* 闪光标题 */
+.shine {
+  font-size: 48px;
+  background: linear-gradient(90deg, #fff, #0ff, #fff);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 2s linear infinite;
+}
+@keyframes shine {
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+}
+
+.marquee {
+  font-size: 20px;
+  color: lime;
+  margin: 20px 0;
+}
+
+/* iPod 区域 */
+#ipod {
+  position: relative;
+  width: 200px;
+  margin: 20px auto;
+}
+.ipod-img {
+  width: 100%;
+}
+.btn {
+  position: absolute;
+  bottom: 30px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50%;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
+.play { left: 50px; }
+.pause { right: 50px; }
